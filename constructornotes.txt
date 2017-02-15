@@ -1,0 +1,57 @@
+Word
+    word: "cat",
+    letters: [
+        c letter object
+        a letter object
+        t letter object
+    ]
+
+Letter
+    letter: 'c',
+
+
+
+what's the relationship between the word and the letter going to be?
+
+''''''''''''''''''
+_ o _
+
+wrong: a
+
+Word
+    word: 'dog'
+    letters: [
+        d Letter object
+        o Letter object
+        g Letter object
+    ]
+   
+    display:
+        var str = '';
+
+        for loop over the letter objects and it's going to run the display on each letter object
+            str = str + letter.display();
+            (dashes ARE the word until letters are found as true)
+            if found = true, display o; else display _
+
+        return str
+
+    init function - loops over the words and creates letter objects. push those letter objects into the letters property...
+
+
+        
+d Letter object
+    letter: d
+    found: false
+    display: return _
+o Letter object
+    letter: o
+    found: true
+    display: return o
+g Letter object
+    letter: g
+    found: false
+    display: function 
+    	check found 
+    		return the letter 
+    			else return _
