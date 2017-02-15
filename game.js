@@ -20,7 +20,8 @@ function askLetter(){
     name: "guess",
     message: "what letter do you guess?"},
     ]).then(function(data){
-      if (data.guess != 'no'){
+      if (data.guess == this.wordToPlay.length){
+          
           wordObject.updateLetter(data.guess);
 
           console.log(wordObject.display());
